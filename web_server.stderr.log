@@ -1,0 +1,38 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8765
+Press CTRL+C to quit
+127.0.0.1 - - [25/Nov/2026 21:37:23] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:23] "POST /api/validate-draft HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /assets/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /assets/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /assets/fleet.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [25/Nov/2026 21:37:42] "GET /api/runs HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET /assets/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET /assets/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET /assets/fleet.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:42:07] "GET /api/runs HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:43:07] "POST /api/fleet/clone HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:43:11] "POST /api/save HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET /assets/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET /assets/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET /assets/fleet.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:43:41] "GET /api/runs HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET /assets/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET /assets/app.js HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET /assets/fleet.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:48:43] "GET /api/runs HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET /assets/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET /assets/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET /assets/fleet.js HTTP/1.1" 304 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET /api/project HTTP/1.1" 200 -
+127.0.0.1 - - [25/Nov/2026 21:51:55] "GET /api/runs HTTP/1.1" 200 -
