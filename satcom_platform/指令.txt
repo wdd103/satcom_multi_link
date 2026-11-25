@@ -1,0 +1,3 @@
+cd D:\2026\satcom_multi_link\satcom_platform
+$env:PYTHONPATH = 'src'
+python -B -m satcom_platform.web --project examples/minimal_project --port 8765

@@ -1,0 +1,139 @@
+version 3
+run General-0-20261119-20:13:29-37572
+attr configname General
+attr datetime 20261119-20:13:29
+attr datetimef 20261119-201329
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SatcomNetwork
+attr processid 37572
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network SatcomNetwork
+config sim-time-limit 600s
+config ned-path ned
+config output-scalar-file results/General-0.sca
+config output-vector-file results/General-0.vec
+config *.controller.timelineFile "\"../satcom_platform/examples/minimal_project/runs/20261118T020000Z-aabbccdd/omnet_link_timeline.csv\""
+config *.controller.satelliteId "\"SAT41918\""
+config *.aircraft.sendEnabled true
+config *.gateway.sendEnabled true
+config *.aircraft.packetBytes 1200
+config *.gateway.packetBytes 1200
+config *.aircraft.sendInterval 0.1s
+config *.gateway.sendInterval 0.1s
+config *.aircraft.trafficStart 0s
+config *.gateway.trafficStart 0s
+config *.aircraft.trafficStop 600s
+config *.gateway.trafficStop 600s
+config *.satellite.queueCapacity 100
+
+par SatcomNetwork.aircraft.out.airToSat typename "\"ned.DatarateChannel\""
+par SatcomNetwork.aircraft.out.airToSat disabled false
+attr mutable ""
+par SatcomNetwork.aircraft.out.airToSat delay 0.0026647627502577303s
+attr mutable ""
+attr unit s
+par SatcomNetwork.aircraft.out.airToSat datarate 5e+05bps
+attr mutable ""
+attr unit bps
+par SatcomNetwork.aircraft.out.airToSat ber 0
+attr mutable ""
+par SatcomNetwork.aircraft.out.airToSat per 0
+attr mutable ""
+par SatcomNetwork.satellite.toGateway.satToGateway typename "\"ned.DatarateChannel\""
+par SatcomNetwork.satellite.toGateway.satToGateway disabled false
+attr mutable ""
+par SatcomNetwork.satellite.toGateway.satToGateway delay 0.002705909491134648s
+attr mutable ""
+attr unit s
+par SatcomNetwork.satellite.toGateway.satToGateway datarate 5e+05bps
+attr mutable ""
+attr unit bps
+par SatcomNetwork.satellite.toGateway.satToGateway ber 0
+attr mutable ""
+par SatcomNetwork.satellite.toGateway.satToGateway per 0
+attr mutable ""
+par SatcomNetwork.gateway.out.gatewayToSat typename "\"ned.DatarateChannel\""
+par SatcomNetwork.gateway.out.gatewayToSat disabled false
+attr mutable ""
+par SatcomNetwork.gateway.out.gatewayToSat delay 0.002705909491134648s
+attr mutable ""
+attr unit s
+par SatcomNetwork.gateway.out.gatewayToSat datarate 5e+05bps
+attr mutable ""
+attr unit bps
+par SatcomNetwork.gateway.out.gatewayToSat ber 0
+attr mutable ""
+par SatcomNetwork.gateway.out.gatewayToSat per 0
+attr mutable ""
+par SatcomNetwork.satellite.toAircraft.satToAir typename "\"ned.DatarateChannel\""
+par SatcomNetwork.satellite.toAircraft.satToAir disabled false
+attr mutable ""
+par SatcomNetwork.satellite.toAircraft.satToAir delay 0.0026647627502577303s
+attr mutable ""
+attr unit s
+par SatcomNetwork.satellite.toAircraft.satToAir datarate 5e+05bps
+attr mutable ""
+attr unit bps
+par SatcomNetwork.satellite.toAircraft.satToAir ber 0
+attr mutable ""
+par SatcomNetwork.satellite.toAircraft.satToAir per 0
+attr mutable ""
+par SatcomNetwork.controller typename "\"LinkController\""
+par SatcomNetwork.controller timelineFile "\"../satcom_platform/examples/minimal_project/runs/20261118T020000Z-aabbccdd/omnet_link_timeline.csv\""
+par SatcomNetwork.controller satelliteId "\"SAT41918\""
+par SatcomNetwork.controller aircraftId "\"AC1\""
+par SatcomNetwork.controller gatewayId "\"GW1\""
+scalar SatcomNetwork.controller timelineIntervals 60
+par SatcomNetwork.aircraft typename "\"Endpoint\""
+par SatcomNetwork.aircraft sendEnabled true
+par SatcomNetwork.aircraft packetBytes 1200
+par SatcomNetwork.aircraft sendInterval 0.1s
+attr unit s
+par SatcomNetwork.aircraft trafficStart 0s
+attr unit s
+par SatcomNetwork.aircraft trafficStop 600s
+attr unit s
+scalar SatcomNetwork.aircraft generated 6000
+scalar SatcomNetwork.aircraft admitted 1900
+scalar SatcomNetwork.aircraft droppedNoLink 4100
+scalar SatcomNetwork.aircraft received 1800
+scalar SatcomNetwork.aircraft receivedBytes 2160000
+scalar SatcomNetwork.aircraft meanEndToEndDelay_s 0.04587172351199977
+scalar SatcomNetwork.aircraft throughput_bps 28800
+par SatcomNetwork.satellite typename "\"SatelliteRelay\""
+par SatcomNetwork.satellite queueCapacity 100
+par SatcomNetwork.satellite retryInterval 1s
+attr unit s
+scalar SatcomNetwork.satellite forwardedToGateway 1900
+scalar SatcomNetwork.satellite forwardedToAircraft 1800
+scalar SatcomNetwork.satellite droppedOverflowToGateway 0
+scalar SatcomNetwork.satellite droppedOverflowToAircraft 0
+scalar SatcomNetwork.satellite queuedToGatewayAtEnd 0
+scalar SatcomNetwork.satellite queuedToAircraftAtEnd 0
+par SatcomNetwork.gateway typename "\"Endpoint\""
+par SatcomNetwork.gateway sendEnabled true
+par SatcomNetwork.gateway packetBytes 1200
+par SatcomNetwork.gateway sendInterval 0.1s
+attr unit s
+par SatcomNetwork.gateway trafficStart 0s
+attr unit s
+par SatcomNetwork.gateway trafficStop 600s
+attr unit s
+scalar SatcomNetwork.gateway generated 6000
+scalar SatcomNetwork.gateway admitted 1800
+scalar SatcomNetwork.gateway droppedNoLink 4200
+scalar SatcomNetwork.gateway received 1900
+scalar SatcomNetwork.gateway receivedBytes 2280000
+scalar SatcomNetwork.gateway meanEndToEndDelay_s 0.046047815308420864
+scalar SatcomNetwork.gateway throughput_bps 30400
+par SatcomNetwork typename "\"SatcomNetwork\""
+

@@ -1,0 +1,98 @@
+{
+  "AANT_TX": {
+    "peak_gain_dbi": 15.0,
+    "phi0_deg": 30.0,
+    "coefficient_a": 41.62927622582783,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "AANT_RX": {
+    "peak_gain_dbi": 15.0,
+    "phi0_deg": 30.0,
+    "coefficient_a": 41.62927622582783,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "SANT_TX": {
+    "peak_gain_dbi": 20.0,
+    "phi0_deg": 20.0,
+    "coefficient_a": 38.051295085551274,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "SANT_RX": {
+    "peak_gain_dbi": 20.0,
+    "phi0_deg": 20.0,
+    "coefficient_a": 38.051295085551274,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "SFANT_TX": {
+    "peak_gain_dbi": 20.0,
+    "phi0_deg": 20.0,
+    "coefficient_a": 38.051295085551274,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "SFANT_RX": {
+    "peak_gain_dbi": 20.0,
+    "phi0_deg": 20.0,
+    "coefficient_a": 38.051295085551274,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "GANT_TX": {
+    "peak_gain_dbi": 15.0,
+    "phi0_deg": 30.0,
+    "coefficient_a": 41.62927622582783,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  },
+  "GANT_RX": {
+    "peak_gain_dbi": 15.0,
+    "phi0_deg": 30.0,
+    "coefficient_a": 41.62927622582783,
+    "coefficient_b": 25.0,
+    "efficiency": 0.7,
+    "model": "APENST818V01",
+    "source": "APENST818V01.pdf",
+    "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+    "wide_beam_adaptation": true,
+    "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+  }
+}

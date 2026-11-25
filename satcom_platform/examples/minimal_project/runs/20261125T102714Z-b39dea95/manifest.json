@@ -1,0 +1,246 @@
+{
+  "status": "GEOMETRY_AND_BUDGET_COMPLETE",
+  "stk_version": "STK v12.6.0",
+  "project_id": "DemoSatcom",
+  "scenario_start_utc": "2026-11-12T02:00:00.000Z",
+  "scenario_stop_utc": "2026-11-12T02:10:00.000Z",
+  "sample_step_s": 10.0,
+  "aircraft_ids": [
+    "AC1"
+  ],
+  "satellites": [
+    {
+      "satellite_id": "SAT41917",
+      "norad_id": "41917",
+      "tle_epoch_utc": "2026-10-13T20:11:46.208Z"
+    },
+    {
+      "satellite_id": "SAT41918",
+      "norad_id": "41918",
+      "tle_epoch_utc": "2026-10-13T19:53:30.572Z"
+    },
+    {
+      "satellite_id": "SAT41919",
+      "norad_id": "41919",
+      "tle_epoch_utc": "2026-10-13T20:02:39.487Z"
+    }
+  ],
+  "samples": 61,
+  "aircraft_rows": 61,
+  "geometry_rows": 183,
+  "gateway_geometry_rows": 183,
+  "budget_rows": 732,
+  "omnet_timeline_rows": 720,
+  "omnet_timeline_schema_version": "1.0",
+  "omnet_timeline_interval": "[start_s,end_s)",
+  "gateways": [
+    {
+      "alt_m": 10,
+      "gateway_id": "GW1",
+      "lat_deg": 31.2304,
+      "lon_deg": 121.4737
+    }
+  ],
+  "rf_environment": {
+    "requested": {
+      "atmosphere_model": "ITU_R_P676",
+      "cloud_ceiling_m": 3000,
+      "cloud_fog_model": "ITU_R_P840",
+      "cloud_liquid_water_density_g_m3": 0.5,
+      "cloud_temperature_k": 273.15,
+      "cloud_thickness_m": 500,
+      "default_other_loss_db": 0,
+      "doppler_compensation": "IDEAL",
+      "downlink_interference_model": "COCHANNEL_AGGREGATE",
+      "polarization_loss_model": "EXPLICIT",
+      "rain_model": "ITU_R_P618",
+      "rain_outage_percent": 0.1,
+      "satellite_propagator": "SGP4",
+      "scintillation_outage_percent": 0.1,
+      "tle_max_age_days_warning": "999",
+      "tropo_scintillation_model": "ITU_R_P618"
+    },
+    "selected_models": {
+      "atmosphere_model": "ITU-R_P676-9",
+      "rain_model": "ITU-R_P618-13",
+      "cloud_fog_model": "ITU-R_P840-7",
+      "tropo_scintillation_model": "ITU-R_P618-12"
+    },
+    "stk_readback": [
+      "PropagationChannel.UseITU618Section2p5 = false",
+      "PropagationChannel.UseCloudFogModel = true",
+      "PropagationChannel.CloudFogModel.ReferenceType = Unlinked",
+      "PropagationChannel.CloudFogModel = ITU-R_P840-7",
+      "PropagationChannel.CloudFogModel.UserComment = ITU-R P840-7",
+      "PropagationChannel.CloudFogModel.LiquidWaterDensityValueChoice = Liquid Water Content Density Value",
+      "PropagationChannel.CloudFogModel.CloudCeiling = 3000.00000000 m",
+      "PropagationChannel.CloudFogModel.CloudLayerThickness = 500.00000000 m",
+      "PropagationChannel.CloudFogModel.CloudTemp = 273.15000000 K",
+      "PropagationChannel.CloudFogModel.CloudLiqWaterDensity = 0.00050000 kg*m^-3",
+      "PropagationChannel.UseTropoScintModel = true",
+      "PropagationChannel.TropoScintModel.ReferenceType = Unlinked",
+      "PropagationChannel.TropoScintModel = ITU-R_P618-12",
+      "PropagationChannel.TropoScintModel.UserComment = ITU-R P618-12",
+      "PropagationChannel.TropoScintModel.FadeDepthAverageTimeChoice = Fade depth for the average year",
+      "PropagationChannel.TropoScintModel.FadeExceeded = 0.00100000 unitValue",
+      "PropagationChannel.TropoScintModel.PercentTimeRefracGrad = 0.10000000 unitValue",
+      "PropagationChannel.TropoScintModel.SurfaceTemperature = 273.15000000 K",
+      "PropagationChannel.UseIonoFadingModel = false",
+      "PropagationChannel.UseRainModel = true",
+      "PropagationChannel.RainModel.ReferenceType = Unlinked",
+      "PropagationChannel.RainModel = ITU-R_P618-13",
+      "PropagationChannel.RainModel.UserComment = ITU-R P618-13 rain model",
+      "PropagationChannel.RainModel.SurfaceTemperature = 273.15000000 K",
+      "PropagationChannel.RainModel.EnableDepolarizationLoss = false",
+      "PropagationChannel.RainModel.EnableITU1510 = false",
+      "PropagationChannel.UseAtmosAbsorptionModel = true",
+      "PropagationChannel.AtmosAbsorptionModel.ReferenceType = Unlinked",
+      "PropagationChannel.AtmosAbsorptionModel = ITU-R_P676-9",
+      "PropagationChannel.AtmosAbsorptionModel.UserComment = ITU-R P676-9 gaseous absorption model",
+      "PropagationChannel.AtmosAbsorptionModel.UseApproxMethod = true",
+      "PropagationChannel.AtmosAbsorptionModel.UseSeasonalRegional = true",
+      "PropagationChannel.UseUrbanTerresPropLossModel = false",
+      "PropagationChannel.UseCustomA = false",
+      "PropagationChannel.UseCustomB = false",
+      "PropagationChannel.UseCustomC = false",
+      "EarthTemperature = 290.00000000 K",
+      "RainOutagePercent = 0.100000",
+      "ActiveCommSystem = None",
+      "MagneticNorthPoleLatitude = 1.38753676 rad",
+      "MagneticNorthPoleLongitude = -1.20427718 rad"
+    ],
+    "interpretation": "ITU statistical attenuation; not a random weather time series. Receiver system noise temperature remains configured."
+  },
+  "antenna_patterns": {
+    "AANT_TX": {
+      "peak_gain_dbi": 15.0,
+      "phi0_deg": 30.0,
+      "coefficient_a": 41.62927622582783,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "AANT_RX": {
+      "peak_gain_dbi": 15.0,
+      "phi0_deg": 30.0,
+      "coefficient_a": 41.62927622582783,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "SANT_TX": {
+      "peak_gain_dbi": 20.0,
+      "phi0_deg": 20.0,
+      "coefficient_a": 38.051295085551274,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "SANT_RX": {
+      "peak_gain_dbi": 20.0,
+      "phi0_deg": 20.0,
+      "coefficient_a": 38.051295085551274,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "SFANT_TX": {
+      "peak_gain_dbi": 20.0,
+      "phi0_deg": 20.0,
+      "coefficient_a": 38.051295085551274,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "SFANT_RX": {
+      "peak_gain_dbi": 20.0,
+      "phi0_deg": 20.0,
+      "coefficient_a": 38.051295085551274,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "GANT_TX": {
+      "peak_gain_dbi": 15.0,
+      "phi0_deg": 30.0,
+      "coefficient_a": 41.62927622582783,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    },
+    "GANT_RX": {
+      "peak_gain_dbi": 15.0,
+      "phi0_deg": 30.0,
+      "coefficient_a": 41.62927622582783,
+      "coefficient_b": 25.0,
+      "efficiency": 0.7,
+      "model": "APENST818V01",
+      "source": "APENST818V01.pdf",
+      "phi0_mapping": "beamwidth_deg is used as transition angle phi0, not HPBW",
+      "wide_beam_adaptation": true,
+      "cross_polar": "same pattern as co-polar; no extra cross-polar discrimination"
+    }
+  },
+  "doppler_compensation": "IDEAL",
+  "receiver_frequency_tracking_readback": {
+    "*/Satellite/SAT41917/Receiver/U1_SRX1": "Model.FrequencyAutoTracking = true",
+    "*/Satellite/SAT41918/Receiver/U1_SRX1": "Model.FrequencyAutoTracking = true",
+    "*/Satellite/SAT41919/Receiver/U1_SRX1": "Model.FrequencyAutoTracking = true",
+    "*/Aircraft/AC1/Receiver/D1_ARX1": "Model.FrequencyAutoTracking = true",
+    "*/Facility/GW1/Receiver/FD1_GRX1": "Model.FrequencyAutoTracking = true",
+    "*/Satellite/SAT41917/Receiver/FU1_SFRX1": "Model.FrequencyAutoTracking = true",
+    "*/Satellite/SAT41918/Receiver/FU1_SFRX1": "Model.FrequencyAutoTracking = true",
+    "*/Satellite/SAT41919/Receiver/FU1_SFRX1": "Model.FrequencyAutoTracking = true"
+  },
+  "residual_frequency_offset_definition": "Zero by IDEAL compensation assumption; raw STK Freq. Doppler Shift retained separately",
+  "interference": {
+    "enabled": true,
+    "model": "COCHANNEL_AGGREGATE",
+    "implementation": "STK on-axis cross-path budgets plus platform APENST818 off-axis aggregation; not native STK CommSystem SINR",
+    "activity": "All configured satellite downlink TX beams continuously active; exclude serving satellite",
+    "visibility": "STK geometric access and scenario minimum elevation at victim receiver",
+    "pointing": "Victim RX points at candidate satellite; interfering TX points at its own link endpoint",
+    "spectrum": "Same nominal center frequency (within 1 Hz); no adjacent-channel interference",
+    "ber_model": "Coherent uncoded BPSK AWGN with aggregate interference treated as noise; retain STK BER if I=0",
+    "contribution_rows": 0
+  },
+  "budget_access_rows": 148,
+  "min_elevation_deg": 5.0,
+  "interpolation": "STK Lagrange order 1; WGS84 geodetic altitude in meters",
+  "communications": "STK Simple TX/RX on-axis equivalents; directional interference uses exported APENST818V01 formula; feeder and other losses folded into EIRP/G/T; receiver noise figure assumes 290 K reference; BPSK default; no mount-angle simulation",
+  "input_sha256": {
+    "aircraft_track_file": "71cbc39845a66b8ad1c99a1e43a6fad3b505195228214b7761958f8a86faf806",
+    "tle_file": "521b24c3531be690f8740ff851fd6cb0e8cd989583452abd4124b3ad3776cea2",
+    "satellite_config_file": "6bd440f8d56b32a0dad15a2121bd44fa42a83d55fd69661d754dedab42fcf276",
+    "transmitter_receiver_file": "3503bef7ea0c3671a042d4cdbe2fef7956fa62888b48ccad2dce9e5259ad44c8",
+    "antenna_file": "25397d237c1dd1b954b756474f34c2ca01e4e8fc85aac993264d9eb12c5c1243"
+  }
+}

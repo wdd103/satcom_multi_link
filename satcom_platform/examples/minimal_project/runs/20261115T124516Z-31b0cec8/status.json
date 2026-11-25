@@ -1,0 +1,45 @@
+{
+  "state": "COMPLETE",
+  "phase": "COMPLETE",
+  "error": null,
+  "files": [
+    "scenario_bundle.zip",
+    "scenario.sc",
+    "aircraft_state.csv",
+    "link_geometry.csv",
+    "manifest.json",
+    "AC1.e"
+  ],
+  "pid": 16812,
+  "started_utc": "2026-11-15T12:45:16.559Z",
+  "manifest": {
+    "status": "GEOMETRY_COMPLETE",
+    "stk_version": "STK v12.6.0",
+    "project_id": "DemoSatcom",
+    "scenario_start_utc": "2026-11-12T02:00:00.000Z",
+    "scenario_stop_utc": "2026-11-12T02:10:00.000Z",
+    "sample_step_s": 10.0,
+    "aircraft_ids": [
+      "AC1"
+    ],
+    "satellites": [
+      {
+        "satellite_id": "SAT41917",
+        "norad_id": "41917",
+        "tle_epoch_utc": "2026-10-13T20:11:46.208Z"
+      }
+    ],
+    "samples": 61,
+    "aircraft_rows": 61,
+    "geometry_rows": 61,
+    "min_elevation_deg": 5.0,
+    "interpolation": "STK Lagrange order 1; WGS84 geodetic altitude in meters",
+    "communications": "UNVERIFIED; no link_budget.csv generated",
+    "input_sha256": {
+      "aircraft_track_file": "71cbc39845a66b8ad1c99a1e43a6fad3b505195228214b7761958f8a86faf806",
+      "tle_file": "521b24c3531be690f8740ff851fd6cb0e8cd989583452abd4124b3ad3776cea2",
+      "satellite_config_file": "6bd440f8d56b32a0dad15a2121bd44fa42a83d55fd69661d754dedab42fcf276"
+    }
+  },
+  "finished_utc": "2026-11-15T12:46:33.836Z"
+}

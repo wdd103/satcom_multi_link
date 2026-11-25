@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satcom-platform"
+version = "0.1.0"
+description = "Offline configuration core for an aviation satellite communications scenario platform"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0", "Flask>=3.1"]
+
+[project.scripts]
+satcom = "satcom_platform.cli:main"
+satcom-web = "satcom_platform.web:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+satcom_platform = ["web_assets/*"]

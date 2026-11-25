@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071422">
+  <title>航空卫星通信场景平台 · 控制台</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>星航场景平台</strong><small>SATCOM SCENARIO STUDIO</small></div></div>
+      <div class="workspace-label">工作区 <span class="workspace-dot"></span></div>
+      <nav id="nav" aria-label="页面导航"></nav>
+      <div class="side-foot"><div class="foot-icon">⌁</div><div><strong>本地工作模式</strong><small>配置与数据保存在当前机器</small></div></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar">
+        <div class="topbar-left"><button class="mobile-menu" id="menuBtn" aria-label="展开菜单">☰</button><div class="breadcrumb">项目空间 <span>/</span> <strong id="crumb">总览</strong></div></div>
+        <div class="topbar-actions">
+          <span class="connection-pill"><span class="connection-dot"></span> STK 本机连接</span>
+          <button class="btn btn-quiet" id="newBtn">新建</button>
+          <button class="btn btn-quiet" id="openBtn">打开</button>
+          <button class="btn btn-quiet" id="saveAsBtn">另存</button>
+          <button class="btn btn-quiet" id="saveBtn">保存</button>
+          <button class="btn btn-outline" id="validateBtn">验证项目</button>
+          <button class="btn btn-primary" id="runBtn" title="使用已保存配置构建 STK 场景并导出几何文件">▶ 运行场景</button>
+        </div>
+      </header>
+      <main id="main" class="main-content" tabindex="-1"></main>
+      <footer class="statusbar"><span id="statusText">正在加载项目…</span><span class="status-right"><span id="dirtyState">未修改</span><i></i><span>Schema 1.0</span><i></i><span>本地 Web 控制台</span></span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="pathDialog" class="path-dialog"><form method="dialog"><div class="dialog-head"><span id="dialogIcon">⌁</span><button class="icon-btn" value="cancel" aria-label="关闭">×</button></div><h2 id="dialogTitle">打开项目</h2><p id="dialogDescription">输入项目目录或 scenario.yaml 的完整路径。</p><label for="pathInput">本地路径</label><input id="pathInput" autocomplete="off" spellcheck="false" placeholder="D:\\2026\\my_project"><div class="dialog-actions"><button class="btn btn-quiet" value="cancel">取消</button><button class="btn btn-primary" id="dialogConfirm" value="confirm">确认</button></div></form></dialog>
+  <input id="tleUpload" type="file" accept=".tle,.tce" hidden>
+  <input id="trackUpload" type="file" accept=".csv" hidden>
+  <input id="maskUpload" type="file" accept=".bmsk" hidden>
+  <script src="/assets/app.js" defer></script>
+  <script src="/assets/fleet.js" defer></script>
+</body>
+</html>
