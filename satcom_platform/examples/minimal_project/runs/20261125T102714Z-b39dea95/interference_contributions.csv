@@ -1,1 +1,0 @@
-link_id,satellite_id,time_utc,receiver_id,interferer_satellite_id,interferer_tx_id,interferer_link_id,tx_off_axis_deg,rx_off_axis_deg,tx_gain_dbi,rx_gain_dbi,spectral_overlap,received_power_dbw,received_power_w
